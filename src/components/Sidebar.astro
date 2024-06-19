@@ -1,0 +1,42 @@
+---
+import Sparkle from "./icons/Sparkle.astro";
+import SideMenuItems from "./SideMenuItems.astro";
+import Home from "./icons/Home.astro";
+import SearchIcon from "./icons/SearchIcon.astro";
+import HandIcon from "./icons/HandIcon.astro";
+import SheetIcon from "./icons/SheetIcon.astro";
+import PlusIcon from "./icons/PlusIcon.astro";
+import ShirtIcon from "./icons/ShirtIcon.astro";
+import SettingsIcon from "./icons/SettingsIcon.astro";
+import ProfileIcon from "./icons/ProfileIcon.astro";
+---
+
+<nav class="flex flex-col flex-1 gap-2">
+  <div class="bg-zinc-700 rounded-lg p-2">
+    <h1 class="text-zinc-300 font-medium p-2 text-xl">Garment Globe</h1>
+    <ul>
+      <SideMenuItems href="/"><Home /> Inicio</SideMenuItems>
+      <SideMenuItems href="/"><SearchIcon /> Buscar</SideMenuItems>
+    </ul>
+  </div>
+  <div class="bg-zinc-700 rounded-lg p-2">
+    <h2 class="text-zinc-400 font-medium ps-2">Diseños</h2>
+    <ul>
+      <SideMenuItems href="/"><Sparkle />Diseños Unicos</SideMenuItems>
+      <SideMenuItems href="/"><HandIcon />Artesania de Calidad</SideMenuItems>
+      <SideMenuItems href="/"><SheetIcon />Producción Etica</SideMenuItems>
+    </ul>
+  </div>
+  <div class="bg-zinc-700 h-full rounded-lg p-2">
+    <h2 class="text-zinc-400 font-medium ps-2">Categorias</h2>
+    <ul>
+      <SideMenuItems><ShirtIcon />Tops</SideMenuItems>
+    </ul>
+  </div>
+  <div class="bg-zinc-700 rounded-lg p-2">
+    <ul>
+      <SideMenuItems><ProfileIcon />Perfil</SideMenuItems>
+      <SideMenuItems><SettingsIcon />Ajustes</SideMenuItems>
+    </ul>
+  </div>
+</nav>

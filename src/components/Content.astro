@@ -1,0 +1,52 @@
+---
+import HeartIcon from "./icons/HeartIcon.astro";
+import CommentsIcon from "./icons/CommentsIcon.astro";
+import SavedIcon from "./icons/SavedIcon.astro";
+---
+
+<section>
+  <button class="flex gap-2 pt-2 pb-2">
+    <div class="rounded-full bg-black p-5 align-middle"></div>
+    <div class="text-sm font-bold text-white pt-2">Jeremy Betancur</div>
+  </button>
+  <div class="flex gap-2 justify-center">
+    <img src="/img/img1.jpeg" width="350" height="200" alt="" />
+    <div class="flex flex-col gap-2 h-auto">
+      <img src="/img/img2.jpeg" width="150" height="50" alt="" />
+      <img src="/img/img3.jpeg" width="150" height="50" alt="" />
+      <img src="/img/img4.jpeg" width="150" height="50" alt="" />
+    </div>
+    <div class="flex flex-col gap-2 h-auto">
+      <img src="/img/img2.jpeg" width="150" height="50" alt="" />
+      <img src="/img/img3.jpeg" width="150" height="50" alt="" />
+      <img src="/img/img4.jpeg" width="150" height="50" alt="" />
+    </div>
+  </div>
+  <div>
+    <div class="grid grid-cols-3 justify-items-center">
+      <button class="p-2 text-white justify-items-start"><HeartIcon /></button>
+      <button class="p-2 text-white justify-items-center"
+        ><CommentsIcon /></button
+      >
+      <button class="p-2 text-white justify-items-end"><SavedIcon /></button>
+    </div>
+    <p class="text-white text-sm text-justify ps-5 pe-5 ms-5 me-5">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae hic quaerat
+      culpa excepturi vitae ad nesciunt maxime explicabo, aut deserunt ut cumque
+      nihil incidunt labore nobis harum quisquam consequatur accusamus.
+    </p>
+  </div>
+  <div class="flex gap-2">
+    <div class="text-sm font-bold text-white pt-2">Jeremy</div>
+    <p class="text-white text-sm text-justify ps-5 pe-5 ms-5 me-5">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+      excepturi debitis reprehenderit possimus pariatur nostrum ea praesentium
+      unde velit! Porro hic debitis maxime harum. Exercitationem molestiae illum
+      provident dolores delectus.
+    </p>
+  </div>
+  <div class="border-t border-gray-300 mt-3"></div>
+  <slot />
+
+  <style></style>
+</section>
